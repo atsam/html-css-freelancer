@@ -57,3 +57,66 @@ h2{
 }
 
 /*css 2eme div en bas*/
+
+.element{
+  display: flex;
+  margin-top: 80px;
+}
+
+.portfolio{
+  margin-left: 60px;
+  margin-top: 45px;
+}
+
+/* CSS 3em div en bas*/
+.notitle{
+  display: flex;
+  margin:40px 0 100px;
+  ma
+}
+
+.colonne{
+  display: flex;
+}
+
+.colonne p{
+  font-size: 12px;
+}
+
+.colonne img{
+  border-radius: 50%;
+}
+
+article{
+  background-color: red;
+  padding-left: 5px;
+  margin: 0 5px;
+  width: 170px;
+}
+
+
+/* css footer en bas*/
+
+footer{
+  color: #b9c0c6;
+  height: 100px;
+  width: 940px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.icon :nth-child(1), :nth-child(2), :nth-child(3) {
+  padding-right: 15px;
+}
+.fa-instagram{
+  color: black;
+}
+
+/*CSS des titres*/
+
+h2, h3{
+  color: #465065;
+}

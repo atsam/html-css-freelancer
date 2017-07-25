@@ -1,38 +1,53 @@
 /* ===============================
-   Colour Palette:
-   ---------------
-   Dark Grey/Gris Foncé:	                         #465065
-   Light Grey/Gris Claire:			                   #9aa0ab
-   Very Light Grey/Gris Très Claire (footer):       #b9c0c6
-   Red/Rouge:			                               #f0454c
-   Hover on icons, button and "More ->"             #000
-   =============================== */
+Colour Palette:
+---------------
+Dark Grey/Gris Foncé:	                         #465065
+Light Grey/Gris Claire:			                   #9aa0ab
+Very Light Grey/Gris Très Claire (footer):       #b9c0c6
+Red/Rouge:			                               #f0454c
+Hover on icons, button and "More ->"             #000
+=============================== */
 
 /* General */
 
 html {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-   box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 header{
   background-image: url("../images/header.jpg");
   background-size:cover;
   height: 1000px;
+  display: flex;
+  justify-content: center;
 }
+
+
+header h1, p{
+  color: #465065;
+}
+
+.debut{
+  padding-top: 300px;
+  z-index: 1;
+  padding-left: 130px;
+}
+
 
 nav ul{
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  text-transform: uppercase;
+
 }
 
 li{
   padding:15px;
-
 }
 
 main{
@@ -118,6 +133,43 @@ footer{
 
 /*CSS des titres et after et before*/
 
+h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  position: relative;
+  padding-top: 30px;
+}
+
+h1::before{
+  content:"";
+  position: absolute;
+  width: 56px;
+  border-top: 8px solid red;
+  top: 10px;
+}
+
+h1 + p{
+  position: relative;
+}
+
+h1 + p:after{
+  content: "Read more";
+  position: absolute;
+  background-color: Red;
+  width: 140px;
+  color: white;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5%;
+
+}
+
+
+
+
 h2, h3{
   color: #465065;
   font-weight: bold;
@@ -153,12 +205,6 @@ h2:before{
   top:-20px;
 }
 
-.premiere :after{
-  content: "more";
-  position:absolute;
-  width: 48px;
-  top:-20px;
-}
 
 h2{
   position: relative;

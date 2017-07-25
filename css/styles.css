@@ -39,7 +39,7 @@ main{
   width:940px;
   max-width: 100%;
   margin: 40px auto 0;
-  background-color: pink;
+
 }
 
 .conteneur{
@@ -80,7 +80,7 @@ h2{
 }
 
 .colonne p{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .colonne img{
@@ -88,8 +88,9 @@ h2{
 }
 
 article{
-  background-color: red;
+  /*background-color: red;*/
   padding-left: 5px;
+
   margin: 0 5px;
   width: 170px;
 }
@@ -101,10 +102,10 @@ footer{
   color: #b9c0c6;
   height: 100px;
   width: 940px;
-  background-color: green;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid grey;
 
 }
 
@@ -115,8 +116,50 @@ footer{
   color: black;
 }
 
-/*CSS des titres*/
+/*CSS des titres et after et before*/
 
 h2, h3{
   color: #465065;
+  font-weight: bold;
+}
+
+.portfolio > p {
+  color: #465065;
+}
+
+.portfolio :nth-child(3){
+  color: #9aa0ab;
+}
+.portfolio :nth-child(4){
+  color: #9aa0ab;
+}
+
+
+h3 + p {
+  font-weight:bold;
+  color:#f0454c;
+}
+
+article :nth-child(3){
+  color:#9aa0ab;
+  font-size:
+}
+
+h2:before{
+  content: "";
+  position:absolute;
+  border-top: 5px solid red;
+  width: 48px;
+  top:-20px;
+}
+
+.premiere :after{
+  content: "more";
+  position:absolute;
+  width: 48px;
+  top:-20px;
+}
+
+h2{
+  position: relative;
 }

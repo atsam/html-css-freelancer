@@ -22,8 +22,7 @@ header{
   background-image: url("../images/header.jpg");
   background-size:cover;
   height: 1000px;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 
@@ -32,29 +31,94 @@ header h1, p{
 }
 
 .debut{
-  padding-top: 300px;
+  display: block;
+  padding-top: 250px;
   z-index: 1;
-  padding-left: 130px;
+  padding-left: 200px;
 }
 
-
-nav ul{
+.tete{
   display: flex;
-  justify-content: flex-end;
-  list-style: none;
+  color: white;
+/*  width: 100px;*/
+  justify-content: center;
+}
+
+header p:first-child{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Montserrat;
+  background-color: #f0454c;
+  padding:15px 15px ;
+  border-radius: 5px;
+  margin: 0 220px 20px 150px;
+
+}
+
+nav  {
+  display: flex;
   text-transform: uppercase;
+  padding: 15px;
+  margin-left: 90px;
+}
+
+a{
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+header .fa-twitter, header .fa-facebook{
+  color: red;
+}
+
+span{
+  display: block;
+}
+
+h1{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Montserrat;
+  /*font-size: 40px;*/
+  position: relative;
+  padding-top: 30px;
+}
+
+h1:before{
+  content:"";
+  position: absolute;
+  width: 56px;
+  border-top: 8px solid red;
+  top: 10px;
+}
+
+h1 + p{
+  position: relative;
+}
+
+h1 + p:after{
+  content: "Read more";
+  position: absolute;
+  background-color: Red;
+  width: 140px;
+  color: white;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5%;
 
 }
 
-li{
-  padding:15px;
-}
+
+/*css header au dessus*/
 
 main{
   width:940px;
   max-width: 100%;
   margin: 40px auto 0;
-
 }
 
 .conteneur{
@@ -132,40 +196,6 @@ footer{
 }
 
 /*CSS des titres et after et before*/
-
-h1{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 40px;
-  position: relative;
-  padding-top: 30px;
-}
-
-h1::before{
-  content:"";
-  position: absolute;
-  width: 56px;
-  border-top: 8px solid red;
-  top: 10px;
-}
-
-h1 + p{
-  position: relative;
-}
-
-h1 + p:after{
-  content: "Read more";
-  position: absolute;
-  background-color: Red;
-  width: 140px;
-  color: white;
-  top: 60px;
-  left: 0;
-  text-align: center;
-  padding: 25px;
-  border-radius: 5%;
-
-}
 
 
 

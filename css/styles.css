@@ -87,13 +87,6 @@ h1{
   padding-top: 30px;
 }
 
-/*h1:before{
-  content:"";
-  position: absolute;
-  width: 56px;
-  border-top: 8px solid red;
-  top: 10px;
-}*/
 
 h1 + p{
   position: relative;
@@ -110,13 +103,13 @@ h1 + p{
 
 }
 
-
 /*css header au dessus*/
 
 main{
   width:940px;
   max-width: 100%;
   margin: 40px auto 0;
+  /*background-color: pink;*/
 }
 
 .conteneur{
@@ -149,10 +142,14 @@ h2{
 
 
 /* CSS 3em div en bas*/
+
+.team > p {
+  color: #9aa0ab;
+}
+
 .notitle{
   display: flex;
-  margin:40px 0 100px;
-  ma
+  margin:40px 0 35px;
 }
 
 .colonne{
@@ -168,12 +165,13 @@ h2{
 }
 
 article{
-  /*background-color: red;*/
-  padding-left: 5px;
-  margin: 0 5px;
-  width: 170px;
+
+  width: 173.3px;
 }
 
+aside{
+  width: 140px;
+}
 
 /* css footer en bas*/
 
@@ -184,7 +182,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid grey;
+  border-top: 1px solid lightgrey;
 }
 
 footer .icon a {
@@ -246,6 +244,10 @@ h2{
   position: relative;
 }
 
+h3{
+  text-transform: uppercase;
+}
+
 .more {
   text-transform: uppercase;
   padding: 0;
@@ -254,11 +256,20 @@ h2{
 
 .portfolio h2, .team h2 {
   font-family: Montserrat;
-  font-size: 700;
+  font-size: 27px;
 }
 
 .premiere p {
   background: linear-gradient( to bottom,#465065 ,#9aa0ab ,#b9c0c6 );
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+
+a:hover{
+  color: black;
+}
+
+.single{
+  float: right;
+  margin-bottom: 60px;
 }
